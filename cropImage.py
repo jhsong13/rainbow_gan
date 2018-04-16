@@ -18,5 +18,6 @@ def cropImage(Image_name): #파일이름(확장자포함) 입력
         else:
             count=count+1 #폴더가 있을때 카운트 1증가
             
-    cropImage.save(dirname+'/'+Image_name) #생성한 폴더로 자른 이미지 저장
-    return dirname+'/'+Image_name #저장된 경로 리턴
+    cropImage.save(dirname+'/fake.jpg') #생성한 폴더로 자른 이미지를 fake.jpg로 저장
+    #print ('cropImage return address : '+dirname+'/fake.jpg')
+    return (dirname+'/fake.jpg') #저장된 경로 리턴
